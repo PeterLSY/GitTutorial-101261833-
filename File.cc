@@ -32,6 +32,12 @@ void File::print() const {
 
 // Print file metadata and content
 void File::printContents() const {
-    print();
-    cout << "Content: " << content << endl;
+    // First, print the metadata
+    cout << "File: " << name << endl;
+    cout << "Last modified: ";
+    lastModified.print();
+    cout << endl;
+
+    // Then, print the file content
+    cout << "Content: " << endl << content << endl;
 }
