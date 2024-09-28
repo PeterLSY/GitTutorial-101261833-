@@ -24,6 +24,9 @@ bool File::lessThan(const File& otherFile) const {
 
 // Print file metadata (name and date)
 void File::print() const {
+    // Debug print statement
+    cout << "Debug: Printing file metadata" << endl;
+
     cout << "File: " << name << endl;
     cout << "Last modified: ";
     lastModified.print();
@@ -32,7 +35,10 @@ void File::print() const {
 
 // Print file metadata and content
 void File::printContents() const {
-    // First, print the metadata
+    // Debug print statement
+    cout << "Debug: Printing file contents" << endl;
+
+    // First, print the metadata (name and date)
     cout << "File: " << name << endl;
     cout << "Last modified: ";
     lastModified.print();
